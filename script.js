@@ -21,7 +21,7 @@ show.addEventListener('click', ()=> showWeather());
 async function showWeather() {
   let zipcode = zip_code.value
   /*Complete api call url that will take user input for zipcode. Used back-tick to make url work and also substitued country code with
-  US and created account for unique API key*/ 
+  US and created account for unique API key*/
  await fetch (`https:api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&appid=713d463f3f24af1462719e92fbd286e8&units=imperial`)
  .then(response => response.json())
  .then((data)=>{
@@ -38,6 +38,7 @@ async function showWeather() {
    minimum.innerHTML=data.main.temp_min
    maximum.innerHTML=data.main.temp_max
    humidity.innerHTML=data.main.humidity
+   //
 
 
 
