@@ -38,7 +38,7 @@ async function showWeather() {
    minimum.innerHTML=data.main.temp_min
    maximum.innerHTML=data.main.temp_max
    humidity.innerHTML=data.main.humidity
-   //
+   //TC
 
 
 
